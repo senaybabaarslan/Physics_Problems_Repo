@@ -64,11 +64,9 @@ y(x,t) = A \cos(kx - \omega t)
 $$
 
 1. Sprawdź, że spełnia równanie falowe:
-
 $$
 \frac{\partial^2 y}{\partial t^2} = v^2 \frac{\partial^2 y}{\partial x^2}
 $$
-
 2. Wyznacz zależność między $v$, $k$ i $\omega$.
 
 Odpowiedzi: relacja algebraiczna.

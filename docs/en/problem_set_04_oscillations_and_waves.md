@@ -65,11 +65,9 @@ y(x,t) = A \cos(kx - \omega t)
 $$
 
 1. Verify that it satisfies the wave equation:
-
 $$
 \frac{\partial^2 y}{\partial t^2} = v^2 \frac{\partial^2 y}{\partial x^2}
 $$
-
 2. Determine the relationship between $v$, $k$, and $\omega$.
 
 Answers: algebraic relation.
