@@ -1,9 +1,10 @@
-## Problem 2 – Parametric Trajectory, Velocity, and Acceleration
+## Problem 2 – Trajectory Kinematics
 
-**Given trajectory:** $\vec r(t) = (t^2, \sin t, 5)$
+**Trajectory Equation:** $\vec r(t) = (t^2, \sin t, 5)$
 
-* **Velocity:** $\vec v(t) = \frac{d\vec r}{dt} = \mathbf{(2t, \cos t, 0)}$
-* **Acceleration:** $\vec a(t) = \frac{d^2\vec r}{dt^2} = \mathbf{(2, -\sin t, 0)}$
-* **Velocity magnitude at $t=1$:** $|\vec v(1)| = \sqrt{2^2 + \cos^2(1) + 0} \approx \mathbf{2.07}$
-* **Dot product:** $\vec v \cdot \vec a = (2t)(2) + (\cos t)(-\sin t) = \mathbf{4t - \sin t \cos t}$
-* **Cross product:** $\vec v \times \vec a = \mathbf{(0, 0, -2t \sin t - 2 \cos t)}$
+* **Step 1: Velocity ($\vec v$):** Take the derivative (speed of change).
+  $\vec v(t) = \frac{d}{dt}(t^2, \sin t, 5) = \mathbf{(2t, \cos t, 0)}$
+* **Step 2: Acceleration ($\vec a$):** Take the derivative of velocity.
+  $\vec a(t) = \frac{d}{dt}(2t, \cos t, 0) = \mathbf{(2, -\sin t, 0)}$
+* **Step 3: Speed at $t=1$:** Put "1" into the velocity formula.
+  $|\vec v(1)| = \sqrt{(2 \times 1)^2 + \cos^2(1)} \approx \mathbf{2.07}$
