@@ -1,1 +1,1 @@
-**Problem 8:** $\frac{dy}{dt} = -ky \implies \frac{dy}{y} = -k dt \implies \ln y = -kt + C \implies \mathbf{y(t) = y(0)e^{-kt}}$
+* **Problem 8 (The Decay):** If something disappears based on how much of it is left ($dy/dt = -ky$), the answer is always an exponential drop: $\mathbf{y(t) = y_0 e^{-kt}}$.
