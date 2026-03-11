@@ -1,3 +1,2 @@
-**Problem 6 (Arc Length):**
-$x=t, y=t^2 \implies \vec v = (1, 2t) \implies |\vec v| = \sqrt{1 + 4t^2}$
-$s = \int_0^1 \sqrt{1 + 4t^2} dt \approx \mathbf{1.479}$
+**Problem 6:** Length of the path $y=x^2$ from 0 to 1.
+We calculate $\int_0^1 \sqrt{1 + (\text{derivative})^2} dx = \int_0^1 \sqrt{1 + 4x^2} dx \approx \mathbf{1.48}$
