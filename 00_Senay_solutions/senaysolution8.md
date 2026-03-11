@@ -1,1 +1,2 @@
-* **Problem 8 (The Decay):** If something disappears based on how much of it is left ($dy/dt = -ky$), the answer is always an exponential drop: $\mathbf{y(t) = y_0 e^{-kt}}$.
+* **Problem 8 (Decay):** $\frac{dy}{dt} = -ky$. This is a basic decay equation.
+  Solution: $\mathbf{y(t) = y(0)e^{-kt}}$
