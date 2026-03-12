@@ -56,4 +56,45 @@ The **dot product** is **negative eight** (**-8**).
 ---
 
 ### Step 04: Find the Angle ($\theta$)
-Now we use the **Dot Product** and the **Lengths** to find the exact **angle
+Now we use the **Dot Product** and the **Lengths** to find the exact **angle** (theta, $\theta$) between the two arrows.
+
+**Formula:**
+$$\cos \theta = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}| \times |\vec{b}|}$$
+
+**Substitution:**
+$$\cos \theta = \frac{-8}{\sqrt{14} \times \sqrt{21}} \approx -0.466$$
+**Result:**
+$$\theta = \arccos(-0.466) \approx \mathbf{117.8^\circ}$$
+(This is an **obtuse angle** because it is greater than 90 degrees).
+
+
+
+---
+
+### Step 05: Cross Product and Area
+The **cross product** (vector product, $\vec{a} \times \vec{b}$) creates a new vector that is **perpendicular** (at a 90-degree angle) to both original vectors.
+
+**Substitution (Matrix Determinant):**
+$$\vec{a} \times \vec{b} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & -1 & 3 \\ 1 & 4 & -2 \end{vmatrix} = \mathbf{(-10, 7, 9)}$$
+
+**Area Calculation:**
+The magnitude of this cross product is exactly equal to the **area of the parallelogram** formed by $\vec{a}$ and $\vec{b}$.
+$$\text{Area} = \sqrt{(-10)^2 + 7^2 + 9^2} = \mathbf{\sqrt{230}} \approx \mathbf{15.17 \text{ units}^2}$$
+
+---
+
+### Step 06: Matrix Transformation and Determinant
+We apply a **linear transformation** to vector $\vec{a}$ using **Matrix A**.
+
+**1. Multiply Matrix A by Vector a ($A\vec{a}$):**
+$$\begin{pmatrix} 2 & 1 & 0 \\ 0 & 1 & -1 \\ 1 & 0 & 1 \end{pmatrix} \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix} = \mathbf{\begin{pmatrix} 3 \\ -4 \\ 5 \end{pmatrix}}$$
+*Meaning:* The original position $(2, -1, 3)$ has been moved to a new position $(3, -4, 5)$.
+
+**2. Calculate the Determinant ($\det A$):**
+The **determinant** tells us how the transformation scales the volume of space.
+$$\det A = 2(1 - 0) - 1(0 - (-1)) + 0 = 2 - 1 = \mathbf{1}$$
+
+**Final Interpretation:**
+Because the **determinant** is exactly **plus one** (+1):
+1.  **Volume is preserved:** The space is not stretched or compressed.
+2.  **Orientation is preserved:** The space is not flipped (it doesn't look like a mirror image)
