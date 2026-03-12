@@ -1,39 +1,67 @@
-## Problem 1: Vectors and Matrix Transformations
-
-**Given Vectors:** $\vec a = (2, -1, 3)$ and $\vec b = (1, 4, -2)$
-
-### 1.1 Calculating Lengths (Magnitudes)
-To find the length, we use the Pythagorean theorem in 3D: $\sqrt{x^2 + y^2 + z^2}$.
-* **Length of $\vec a$:** $|\vec a| = \sqrt{2^2 + (-1)^2 + 3^2} = \sqrt{4 + 1 + 9} = \mathbf{\sqrt{14}}$
-* **Length of $\vec b$:** $|\vec b| = \sqrt{1^2 + 4^2 + (-2)^2} = \sqrt{1 + 16 + 4} = \mathbf{\sqrt{21}}$
-
-### 1.2 Normalized Vector $\hat a$
-A unit vector has a length of 1. We divide the vector by its own length.
-$$\hat a = \frac{\vec a}{|\vec a|} = \frac{(2, -1, 3)}{\sqrt{14}} = \mathbf{\left( \frac{2}{\sqrt{14}}, -\frac{1}{\sqrt{14}}, \frac{3}{\sqrt{14}} \right)}$$
-
-### 1.3 Dot Product and Angle
-* **Dot Product:** Multiply matching components and add them:
-  $\vec a \cdot \vec b = (2 \times 1) + (-1 \times 4) + (3 \times -2) = 2 - 4 - 6 = \mathbf{-8}$
-* **Angle ($\theta$):** Use the formula $\cos \theta = \frac{\vec a \cdot \vec b}{|\vec a||\vec b|}$
-  $\cos \theta = \frac{-8}{\sqrt{14}\sqrt{21}} = \frac{-8}{\sqrt{294}} \approx -0.466$
-  $\theta = \arccos(-0.466) \approx \mathbf{117.8^\circ}$
-
-### 1.4 Cross Product and Area
-The cross product creates a vector perpendicular to both.
-$$\vec a \times \vec b = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 2 & -1 & 3 \\ 1 & 4 & -2 \end{vmatrix}$$
-* $\mathbf{i}: (-1)(-2) - (3)(4) = 2 - 12 = -10$
-* $\mathbf{j}: -[(2)(-2) - (3)(1)] = -[-4 - 3] = 7$
-* $\mathbf{k}: (2)(4) - (-1)(1) = 8 + 1 = 9$
-* **Result:** $\vec a \times \vec b = \mathbf{(-10, 7, 9)}$
-* **Area of Parallelogram:** Magnitude of the cross product: $\sqrt{(-10)^2 + 7^2 + 9^2} = \sqrt{100+49+81} = \mathbf{\sqrt{230}}$
-
-
-
-### 1.5 Matrix Operations
-* **Matrix-Vector Multiplication $A\vec a$:**
-  $$\begin{pmatrix} 2 & 1 & 0 \\ 0 & 1 & -1 \\ 1 & 0 & 1 \end{pmatrix} \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix} = \begin{pmatrix} (2 \times 2) + (1 \times -1) + (0 \times 3) \\ (0 \times 2) + (1 \times -1) + (-1 \times 3) \\ (1 \times 2) + (0 \times -1) + (1 \times 3) \end{pmatrix} = \mathbf{\begin{pmatrix} 3 \\ -4 \\ 5 \end{pmatrix}}$$
-* **Determinant ($\det A$):**
-  $\det A = 2(1-0) - 1(0 - (-1)) + 0 = 2 - 1 = \mathbf{1}$
-* **Orientation:** Since $\det A = 1$ (which is positive), the transformation **preserves** the orientation.
+# Problem 1 – Vector Length and Interaction
 
 ---
+
+## Step-by-Step Logic
+
+### Step 01: Calculate the Length (Magnitude)
+To find how "long" a vector is, we use the **3D Pythagorean theorem**. We square each coordinate, add them together, and take the **square root** ($\sqrt{x}$).
+
+**Formula:**
+$$|\vec{a}| = \sqrt{x^2 + y^2 + z^2}$$
+
+**Substitution for Vector a (2, -1, 3):**
+* Square of 2 is **four** (4)
+* Square of -1 is **one** (1)
+* Square of 3 is **nine** (9)
+* Sum: $4 + 1 + 9 = 14$
+
+**Result:**
+The length of **vector a** (magnitude of a, $|\vec{a}|$) is the **square root of fourteen** ($\mathbf{\sqrt{14}}$).
+
+---
+
+### Step 02: Calculate the Dot Product
+The **dot product** (scalar product, $\cdot$) shows us how much two vectors "agree" or point in the same direction. We multiply the matching parts (x with x, y with y, z with z) and sum them up.
+
+**Formula:**
+$$\vec{a} \cdot \vec{b} = (a_x \times b_x) + (a_y \times b_y) + (a_z \times b_z)$$
+
+**Substitution:**
+* Multiply x: $2 \times 1 = 2$
+* Multiply y: $(-1) \times 4 = -4$
+* Multiply z: $3 \times (-2) = -6$
+* Sum: $2 + (-4) + (-6) = -8$
+
+**Result:**
+The **dot product** ($\vec{a} \cdot \vec{b}$) is **negative eight** (**-8**).
+
+---
+
+### Step 03: Determine the Angle
+Now, we use the results from **Step 01** and **Step 02** to find the **angle** (theta, $\theta$) between the two vectors.
+
+**Formula:**
+$$\cos \theta = \frac{\text{Dot Product}}{\text{Length a} \times \text{Length b}}$$
+
+**Substitution:**
+$$\cos \theta = \frac{-8}{\sqrt{14} \times \sqrt{21}} \approx -0.466$$
+
+**Result:**
+The **angle** ($\theta$) is **one hundred seventeen point eight degrees** ($\mathbf{117.8^\circ}$).
+
+---
+
+## Final Result Summary
+
+| Component | Mathematical Result |
+| :--- | :--- |
+| **Length of a** ($|\vec{a}|$) | $\sqrt{14}$ |
+| **Length of b** ($|\vec{b}|$) | $\sqrt{21}$ |
+| **Dot Product** ($\vec{a} \cdot \vec{b}$) | $-8$ |
+| **Angle** ($\theta$) | $117.8^\circ$ |
+
+---
+
+## Interpretation
+The **magnitude** ($|\vec{a}|$) represents the distance of the vector from the origin. The **dot product** ($\cdot$) being negative tells us that the vectors are pointing away from each other. Specifically, because the **angle** ($\theta$) is greater than **ninety degrees** (90°), we call this an **obtuse angle**. This is a classic example of using basic algebra to understand the geometry of 3D space.
