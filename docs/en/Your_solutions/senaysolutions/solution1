@@ -1,0 +1,63 @@
+# Problem 01: Vector Algebra in 3D Space
+
+## 1. Defining the Vectors
+We are given two vectors in a 3D Cartesian coordinate system:
+- Vector A: a = [2, 1, -3]
+- Vector B: b = [4, -2, 1]
+
+Each element represents the (x, y, z) components respectively.
+
+---
+
+## a) Calculate the Magnitude of each vector
+The magnitude (length) of a vector is calculated using the 3D Pythagorean theorem:
+Formula: |v| = sqrt(x² + y² + z²)
+
+### Calculation for Vector A:
+|a| = sqrt(2² + 1² + (-3)²)
+|a| = sqrt(4 + 1 + 9)
+|a| = sqrt(14) ≈ 3.74
+
+### Calculation for Vector B:
+|b| = sqrt(4² + (-2)² + 1²)
+|b| = sqrt(16 + 4 + 1)
+|b| = sqrt(21) ≈ 4.58
+
+---
+
+## b) Calculate the Dot Product (a · b)
+The dot product tells us how much one vector "aligns" with another. It results in a scalar (a single number).
+Formula: a · b = (ax * bx) + (ay * by) + (az * bz)
+
+### Step-by-Step:
+1. Multiply X components: (2 * 4) = 8
+2. Multiply Y components: (1 * -2) = -2
+3. Multiply Z components: (-3 * 1) = -3
+
+Result: 8 + (-2) + (-3) = 3
+Conclusion: The dot product is 3.
+
+---
+
+## c) Calculate the Cross Product (a × b)
+The cross product results in a NEW vector that is perpendicular (90 degrees) to both A and B. We use the determinant method.
+
+Formula:
+i: (ay*bz - az*by) = (1*1 - (-3)*(-2)) = 1 - 6 = -5
+j: (az*bx - ax*bz) = ((-3)*4 - 2*1) = -12 - 2 = -14
+k: (ax*by - ay*bx) = (2*(-2) - 1*4) = -4 - 4 = -8
+
+Resulting Vector: a × b = [-5, -14, -8]
+
+---
+
+## d) Calculate the Angle (θ) between vectors
+We use the dot product formula: a · b = |a| * |b| * cos(θ)
+
+### Step-by-Step:
+1. cos(θ) = (a · b) / (|a| * |b|)
+2. cos(θ) = 3 / (sqrt(14) * sqrt(21))
+3. cos(θ) = 3 / (3.74 * 4.58) ≈ 0.175
+4. θ = arccos(0.175)
+
+Result: θ ≈ 79.9 degrees.
